@@ -1,0 +1,27 @@
+name: Deploy to WordPress.org
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to deploy'
+        required: false
+        default: '1.0.0'
+
+jobs:
+  deploy:
+    name: Deploy to WordPress.org
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to WordPress.org SVN
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: ocasio-301-redirect-manager
+          VERSION: ${{ github.event.inputs.version || (github.ref_type == 'tag' && '' || '1.0.0') }}
