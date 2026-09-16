@@ -3,7 +3,7 @@ Contributors: ocas
 Tags: 301 redirects, redirect, 301 redirect, broken links, 404 redirect
 Requires at least: 5.8
 Tested up to: 7.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -19,6 +19,10 @@ Ocasio 301 Redirect Manager gives you a clean, simple way to map old URLs to new
 It features instant type-ahead search so you can find published posts and pages without manually copying long URLs.
 
 It hooks into WordPress early on page load, running on pure PHP with zero database bloat and zero impact on your front-end speed.
+
+For screenshots, features, and setup details, visit the [official plugin page](https://kevinocasio.com/wordpress-plugins/ocasio-301-redirect-manager/).
+
+Developed and maintained by [Kevin Ocasio](https://kevinocasio.com).
 
 == Installation ==
 
@@ -40,7 +44,13 @@ Yes. You can redirect any relative path on your domain to external URLs, affilia
 = Does this slow down my website? =
 No. It only checks incoming URLs in lightweight PHP memory and doesn't run complex queries on normal page loads.
 
+= Where can I ask questions or report an issue? =
+You can post in the plugin support forum on WordPress.org or send a direct message through my [contact page](https://kevinocasio.com/contact/).
+
 == Changelog ==
+
+= 1.0.1 =
+* Added links to official plugin page and support contact.
 
 = 1.0.0 =
 * Initial public release.
