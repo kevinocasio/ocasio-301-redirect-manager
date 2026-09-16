@@ -3,7 +3,7 @@
  * Plugin Name: Ocasio 301 Redirect Manager
  * Plugin URI:  https://kevinocasio.com/wordpress-plugins/ocasio-301-redirect-manager/
  * Description: A lightweight, high-performance tool to manage 301 permanent redirects and fix broken links.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Kevin Ocasio
  * Author URI:  https://kevinocasio.com
  * License:     GPL-2.0+
